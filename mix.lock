@@ -1,0 +1,3 @@
+%{
+  "persistent_vector": {:hex, :persistent_vector, "0.1.4", "3103d04f2e3a34399f5e5b8dd59d4ff05bad2bb449bcf8c460605b218a9df29e", [:mix], [], "hexpm", "4108bd191b93f3307b4e88431826c121d9fb1aeb3f93c12c5491e6541a23074d"},
+}
