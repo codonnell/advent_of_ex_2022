@@ -31,10 +31,10 @@ defmodule Day8 do
   def solve1(f) do
     grid = read_input(f)
 
-    cells =
-      Enum.flat_map(0..(PersistentVector.count(grid) - 1), fn i ->
-        Enum.map(0..(PersistentVector.count(grid[0]) - 1), fn j -> {i, j} end)
-      end)
+    cells = for i <- 0..(PersistentVector.count(grid) - 1),
+      j <- 0..(PersistentVector.count(grid[0]) - 1) do
+        {i, j}
+    end
 
     Enum.filter(cells, &is_visible?(grid, &1))
     |> Enum.count()
@@ -69,10 +69,10 @@ defmodule Day8 do
   def solve2(f) do
     grid = read_input(f)
 
-    cells =
-      Enum.flat_map(0..(PersistentVector.count(grid) - 1), fn i ->
-        Enum.map(0..(PersistentVector.count(grid[0]) - 1), fn j -> {i, j} end)
-      end)
+    cells = for i <- 0..(PersistentVector.count(grid) - 1),
+      j <- 0..(PersistentVector.count(grid[0]) - 1) do
+        {i, j}
+    end
 
     Enum.map(cells, &scenic_score(grid, &1))
     |> Enum.max()
