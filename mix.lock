@@ -1,3 +1,4 @@
 %{
   "persistent_vector": {:hex, :persistent_vector, "0.1.4", "3103d04f2e3a34399f5e5b8dd59d4ff05bad2bb449bcf8c460605b218a9df29e", [:mix], [], "hexpm", "4108bd191b93f3307b4e88431826c121d9fb1aeb3f93c12c5491e6541a23074d"},
+  "priority_queue": {:hex, :priority_queue, "1.0.0", "5ff5f83a764b635e71f0e41bf78b9763bb233bbac8f5733b4b09b6730bddf866", [:mix], [], "hexpm", "ba3dc420a5898d863803455c05ad870c6b6f3adb12b50ebea6cd6aeed1b358b7"},
 }
